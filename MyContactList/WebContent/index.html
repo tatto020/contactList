@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contact List</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<h2 class="headerTitle">Contact Phone List</h2>
+		</div>
+	</header>
+
+	<main>
+
+	<section class="container">
+		<h2>My contacts</h2>
+		<label for="list-filter">Filter</label> <input type="text"
+			name="filter" id="list-filter" placeholder="Search">
+
+		<table class="contactTable">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Phone Number</th>
+					<th>Country</th>
+					<!-- <th>State</th> -->
+				</tr>
+			</thead>
+			<tbody id="table-rows">
+			</tbody>
+		</table>
+		<button id="get-list" class="botao bto-principal">Refresh
+			List</button>
+	</section>
+
+	</main>
+
+	<script src="js/filter.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/ajax.js"></script>
+
+</body>
+</html>
