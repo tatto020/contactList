@@ -9,14 +9,17 @@ button.addEventListener("click", function(){
 
 		if(xhr.status==200){
 			var response = xhr.responseText;
+
 			var contactList = JSON.parse(response);
+
 
 			contactList.forEach(function(contact){
 				addContactToList(contact);
 			});
 		}else{
+			var response = xhr.responseText;
 			console.log(xhr.status);
-			
+
 		}
 	});
 	xhr.send();

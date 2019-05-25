@@ -19,13 +19,13 @@ import com.google.gson.Gson;
 @WebServlet("/Controller")
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		List<Customer> list = null;
 		String json = "";
 		PrintWriter out = response.getWriter();
-		
-		
+
+
 		try {
 			response.setContentType("application/json");
 			response.setCharacterEncoding("UTF-8");
@@ -39,7 +39,7 @@ public class Controller extends HttpServlet {
 			out.flush();
 		}
 
-		
+
 	}
 
 }
