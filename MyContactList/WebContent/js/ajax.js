@@ -18,6 +18,7 @@ button.addEventListener("click", function(){
 			});
 		}else{
 			var response = xhr.responseText;
+			console.log(response);
 			console.log(xhr.status);
 
 		}

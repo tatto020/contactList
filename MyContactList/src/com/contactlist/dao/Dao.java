@@ -13,18 +13,10 @@ public class Dao {
 
 		Connection conn = null;
 
-		String url = "jdbc:sqlite:/var/www/sample.sqlite";
-		//		try {
-		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection(url);
-		//			Commented due to investigating connections problems
-		//			with sqlite + docker.
-		//		} catch (SQLException e) {
-		//			e.printStackTrace();
-		//		} catch (ClassNotFoundException e) {
-		//			// TODO Auto-generated catch block
-		//			e.printStackTrace();
-		//		}
+		String url = "jdbc:sqlite:/var/www/sample.db";
+			Class.forName("org.sqlite.JDBC");
+			conn = DriverManager.getConnection(url);
+
 		return conn;
 	}
 

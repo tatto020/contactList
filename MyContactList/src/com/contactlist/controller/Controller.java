@@ -30,11 +30,12 @@ public class Controller extends HttpServlet {
 			response.setContentType("application/json");
 			response.setCharacterEncoding("UTF-8");
 			list = new CustomerDao().getList();
-			json = new Gson().toJson(list);
-			out.print(json);
-			out.flush();
+			json = new Gson().toJson(list)!=null?new Gson().toJson(list):"Databse connection error!";
+
 		} catch (Exception e) {
 			json = e.getMessage();
+
+		} finally {
 			out.print(json);
 			out.flush();
 		}
