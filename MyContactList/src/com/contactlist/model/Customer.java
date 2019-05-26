@@ -64,7 +64,7 @@ public class Customer {
 		return country.toString();
 	}
 	private void setCountry(String phone) {
-		int countryCode = Integer.parseInt(phone.substring(1, 3));
+		int countryCode = Integer.parseInt(phone.substring(1, 4));
 
 		switch (countryCode) {
 

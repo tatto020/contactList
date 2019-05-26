@@ -10,7 +10,8 @@ public class Dao {
 
 		Connection conn = null;
 
-		String url = "jdbc:sqlite:/var/www/sample.db";
+//		String url = "jdbc:sqlite:/var/www/sample.db";
+		String url = "jdbc:sqlite:C:/sqlite/db/sample.db";
 			Class.forName("org.sqlite.JDBC");
 			conn = DriverManager.getConnection(url);
 

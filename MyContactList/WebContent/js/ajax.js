@@ -1,7 +1,10 @@
-var button = document.querySelector("#get-list");
+//var button = document.querySelector("#get-list");
 
-button.addEventListener("click", function(){
+//button.addEventListener("click", function(){
+window.onload = ajax;
 
+
+function ajax(){
 	var xhr = new XMLHttpRequest();
 
 	xhr.open("GET","Controller");
@@ -25,4 +28,4 @@ button.addEventListener("click", function(){
 	});
 	xhr.send();
 
-});
+}
