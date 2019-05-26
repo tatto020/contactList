@@ -18,8 +18,14 @@
 	</header>
 	<section class="container">
 		<h2>My contacts</h2>
-		<label for="list-filter">Filter</label> <input type="text"
-			name="filter" id="list-filter" placeholder="Search">
+
+		<label for="list-filter">Filter</label> 
+		
+		<select id="fOption">
+			<option value="0" id="0">name</option>
+			<option value="1" id="1">country</option>
+			<option value="2" id="2">phone</option>
+		</select> <input type="text" name="filter" id="list-filter"placeholder="Search">
 
 		<table class="contactTable">
 			<thead>

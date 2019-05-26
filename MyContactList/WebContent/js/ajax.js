@@ -1,8 +1,5 @@
-//var button = document.querySelector("#get-list");
 
-//button.addEventListener("click", function(){
 window.onload = ajax;
-
 
 function ajax(){
 	var xhr = new XMLHttpRequest();
