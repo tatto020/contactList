@@ -4,9 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import org.sqlite.SQLite;
-import org.sqlite.SQLiteConnection;
-
 public class Dao {	
 
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
